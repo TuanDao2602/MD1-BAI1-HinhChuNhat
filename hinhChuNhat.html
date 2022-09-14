@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script src="chunhat.js"></script>
+</head>
+<canvas id="newCanvas" width="1000" height="500" style="border: 5px solid red"></canvas>
+<body>
+<script>
+    // bài tập hình chữ nhật
+    let retangle = document.getElementById('newCanvas');
+    let ctx = retangle.getContext('2d')
+
+
+    let hinhChuNhat = new Rectangle(200,100,500,300);
+    let chuVi = hinhChuNhat.getChuVi();
+    let dienTich = hinhChuNhat.getDienTich();
+    console.log(chuVi)
+    console.log(dienTich)
+    hinhChuNhat.DrawRectangle(ctx);
+
+
+
+</script>
+
+</body>
+</html>
