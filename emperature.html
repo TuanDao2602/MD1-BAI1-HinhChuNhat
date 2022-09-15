@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="emperature.js"></script>
+</head>
+<input type="number" id="nhietDo" placeholder="nhập vào doC">
+<button id="chuyenDoi" onclick="tinhToan()">chuyển đổi</button>
+<body>
+<script>
+    function tinhToan(){
+        let nhapVao= +document.getElementById("nhietDo").value;
+    let doiNhietDo= new emperature(nhapVao);
+    let doC=doiNhietDo.doC;
+    let doF=doiNhietDo.getDoF();
+    let doK=doiNhietDo.getDoKeVin();
+    console.log(doC,doF,doK)
+    }
+</script>
+
+</body>
+</html>
